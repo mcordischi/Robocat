@@ -6,7 +6,8 @@
 
     <string name="action_settings">Settings</string>
     <string name="app_name">Robocat</string>
-    <string name="hello_world">Hello world!</string>
+    <string name="hello_world">Hello, Pancho!</string>
+    <string name="surface_text"></string>
 
     <style name="AppBaseTheme" parent="android:Theme.Light">
         <!--

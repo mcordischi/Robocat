@@ -2,39 +2,39 @@
 <merger>
 
     <dataSet config="main" >
-        <source path="/media/win/martin/projects/RobocatProjectw/Robocat/src/main/res" >
+        <source path="/media/win/martin/projects/RobocatProject/Robocat/src/main/res" >
             <file
                 name="ic_launcher"
-                path="/media/win/martin/projects/RobocatProjectw/Robocat/src/main/res/drawable-hdpi/ic_launcher.png"
+                path="/media/win/martin/projects/RobocatProject/Robocat/src/main/res/drawable-hdpi/ic_launcher.png"
                 qualifiers="hdpi"
                 type="drawable" />
             <file
                 name="ic_launcher"
-                path="/media/win/martin/projects/RobocatProjectw/Robocat/src/main/res/drawable-mdpi/ic_launcher.png"
+                path="/media/win/martin/projects/RobocatProject/Robocat/src/main/res/drawable-mdpi/ic_launcher.png"
                 qualifiers="mdpi"
                 type="drawable" />
             <file
                 name="ic_launcher"
-                path="/media/win/martin/projects/RobocatProjectw/Robocat/src/main/res/drawable-xhdpi/ic_launcher.png"
+                path="/media/win/martin/projects/RobocatProject/Robocat/src/main/res/drawable-xhdpi/ic_launcher.png"
                 qualifiers="xhdpi"
                 type="drawable" />
             <file
                 name="ic_launcher"
-                path="/media/win/martin/projects/RobocatProjectw/Robocat/src/main/res/drawable-xxhdpi/ic_launcher.png"
+                path="/media/win/martin/projects/RobocatProject/Robocat/src/main/res/drawable-xxhdpi/ic_launcher.png"
                 qualifiers="xxhdpi"
                 type="drawable" />
             <file
                 name="photo_preview"
-                path="/media/win/martin/projects/RobocatProjectw/Robocat/src/main/res/layout/photo_preview.xml"
+                path="/media/win/martin/projects/RobocatProject/Robocat/src/main/res/layout/photo_preview.xml"
                 qualifiers=""
                 type="layout" />
             <file
                 name="photo_preview"
-                path="/media/win/martin/projects/RobocatProjectw/Robocat/src/main/res/menu/photo_preview.xml"
+                path="/media/win/martin/projects/RobocatProject/Robocat/src/main/res/menu/photo_preview.xml"
                 qualifiers=""
                 type="menu" />
             <file
-                path="/media/win/martin/projects/RobocatProjectw/Robocat/src/main/res/values/dimens.xml"
+                path="/media/win/martin/projects/RobocatProject/Robocat/src/main/res/values/dimens.xml"
                 qualifiers="" >
                 <dimen name="activity_horizontal_margin" >16dp
                 </dimen>
@@ -42,17 +42,18 @@
                 </dimen>
             </file>
             <file
-                path="/media/win/martin/projects/RobocatProjectw/Robocat/src/main/res/values/strings.xml"
+                path="/media/win/martin/projects/RobocatProject/Robocat/src/main/res/values/strings.xml"
                 qualifiers="" >
                 <string name="action_settings" >Settings
                 </string>
                 <string name="app_name" >Robocat
                 </string>
-                <string name="hello_world" >Hello world!
+                <string name="surface_text" ></string>
+                <string name="hello_world" >Hello, Pancho!
                 </string>
             </file>
             <file
-                path="/media/win/martin/projects/RobocatProjectw/Robocat/src/main/res/values/styles.xml"
+                path="/media/win/martin/projects/RobocatProject/Robocat/src/main/res/values/styles.xml"
                 qualifiers="" >
 
                 <style
@@ -74,16 +75,16 @@
                 </style>
             </file>
             <file
-                path="/media/win/martin/projects/RobocatProjectw/Robocat/src/main/res/values-sw600dp/dimens.xml"
+                path="/media/win/martin/projects/RobocatProject/Robocat/src/main/res/values-sw600dp/dimens.xml"
                 qualifiers="sw600dp" />
             <file
-                path="/media/win/martin/projects/RobocatProjectw/Robocat/src/main/res/values-sw720dp-land/dimens.xml"
+                path="/media/win/martin/projects/RobocatProject/Robocat/src/main/res/values-sw720dp-land/dimens.xml"
                 qualifiers="sw720dp-land" >
                 <dimen name="activity_horizontal_margin" >128dp
                 </dimen>
             </file>
             <file
-                path="/media/win/martin/projects/RobocatProjectw/Robocat/src/main/res/values-v11/styles.xml"
+                path="/media/win/martin/projects/RobocatProject/Robocat/src/main/res/values-v11/styles.xml"
                 qualifiers="v11" >
 
                 <style
@@ -94,7 +95,7 @@
                 </style>
             </file>
             <file
-                path="/media/win/martin/projects/RobocatProjectw/Robocat/src/main/res/values-v14/styles.xml"
+                path="/media/win/martin/projects/RobocatProject/Robocat/src/main/res/values-v14/styles.xml"
                 qualifiers="v14" >
 
                 <style
@@ -105,10 +106,10 @@
                 </style>
             </file>
         </source>
-        <source path="/media/win/martin/projects/RobocatProjectw/Robocat/build/res/rs/debug" />
+        <source path="/media/win/martin/projects/RobocatProject/Robocat/build/res/rs/debug" />
     </dataSet>
     <dataSet config="debug" >
-        <source path="/media/win/martin/projects/RobocatProjectw/Robocat/src/debug/res" />
+        <source path="/media/win/martin/projects/RobocatProject/Robocat/src/debug/res" />
     </dataSet>
 
 </merger>

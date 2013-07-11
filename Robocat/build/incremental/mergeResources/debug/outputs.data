@@ -1,13 +1,13 @@
 # incremental data. DO NOT EDIT.
 # format is <lastModified> <length> <SHA-1> <path>
 # Encoding is UTF-8
-1373562172000 24654 696bbbc63d2250ef7d3373f2d602e604acd13d8c /media/win/martin/projects/RobocatProjectw/Robocat/build/res/all/debug/drawable-xxhdpi/ic_launcher.png
-1373562172000 785 989aafe8883df76e8646f07ba4df6c21f57a3601 /media/win/martin/projects/RobocatProjectw/Robocat/build/res/all/debug/values/values.xml
-1373562172000 657 6dbeb63313294af48c1963278b91a5e2a0d35aa4 /media/win/martin/projects/RobocatProjectw/Robocat/build/res/all/debug/layout/photo_preview.xml
-1373562172000 7721 39b0f5a0570da92f471225402ad0ea6de30bf2be /media/win/martin/projects/RobocatProjectw/Robocat/build/res/all/debug/drawable-hdpi/ic_launcher.png
-1373562172000 12329 a8301606e15d4b6dccdd775cc273cfc51a552645 /media/win/martin/projects/RobocatProjectw/Robocat/build/res/all/debug/drawable-xhdpi/ic_launcher.png
-1373562172000 203 19aedb7cdc3386344e36087b035a0a6b2b91d4cd /media/win/martin/projects/RobocatProjectw/Robocat/build/res/all/debug/values-v11/values.xml
-1373562172000 244 045ff451db7cd8e61285502b8c9bbf7405f2078d /media/win/martin/projects/RobocatProjectw/Robocat/build/res/all/debug/menu/photo_preview.xml
-1373562172000 3769 eec07752d40e268ed7f4a1730acc77ab1e40aeb0 /media/win/martin/projects/RobocatProjectw/Robocat/build/res/all/debug/drawable-mdpi/ic_launcher.png
-1373562172000 217 f02e000d05a079992d2dba18039216c1e6b8784f /media/win/martin/projects/RobocatProjectw/Robocat/build/res/all/debug/values-v14/values.xml
-1373562172000 125 fae9d1b71d520745438010c9ca7cde9c81dfefac /media/win/martin/projects/RobocatProjectw/Robocat/build/res/all/debug/values-sw720dp-land/values.xml
+1373583197000 217 f02e000d05a079992d2dba18039216c1e6b8784f /media/win/martin/projects/RobocatProject/Robocat/build/res/all/debug/values-v14/values.xml
+1373583197000 10578 3d649153ea93492c8e3f189f0cdb88f82e94ca68 /media/win/martin/projects/RobocatProject/Robocat/build/res/all/debug/drawable-xhdpi/ic_launcher.png
+1373583197000 19738 cc2873e7d6d5c4d228033350e0553c797aa88432 /media/win/martin/projects/RobocatProject/Robocat/build/res/all/debug/drawable-xxhdpi/ic_launcher.png
+1373583197000 203 19aedb7cdc3386344e36087b035a0a6b2b91d4cd /media/win/martin/projects/RobocatProject/Robocat/build/res/all/debug/values-v11/values.xml
+1373583197000 244 045ff451db7cd8e61285502b8c9bbf7405f2078d /media/win/martin/projects/RobocatProject/Robocat/build/res/all/debug/menu/photo_preview.xml
+1373583197000 829 7645594b74f133d8ac075004104c43d1af614d9c /media/win/martin/projects/RobocatProject/Robocat/build/res/all/debug/values/values.xml
+1373583197000 7018 c170557867570744f0cf632f788db56b59e60f75 /media/win/martin/projects/RobocatProject/Robocat/build/res/all/debug/drawable-hdpi/ic_launcher.png
+1373583197000 125 fae9d1b71d520745438010c9ca7cde9c81dfefac /media/win/martin/projects/RobocatProject/Robocat/build/res/all/debug/values-sw720dp-land/values.xml
+1373583197000 657 6dbeb63313294af48c1963278b91a5e2a0d35aa4 /media/win/martin/projects/RobocatProject/Robocat/build/res/all/debug/layout/photo_preview.xml
+1373583197000 3898 96d583f59f045eddcc0d2e91a34a1c79038da3e6 /media/win/martin/projects/RobocatProject/Robocat/build/res/all/debug/drawable-mdpi/ic_launcher.png
