@@ -81,16 +81,15 @@ public class VideoPreviewActivity extends Activity implements SurfaceHolder.Call
         }
     }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-//        getMenuInflater().inflate(R.menu.photo_preview, menu);
-        return true;
-    }
+//    @Override
+//    public boolean onCreateOptionsMenu(Menu menu) {
+//        // Inflate the menu; this adds items to the action bar if it is present.
+////        getMenuInflater().inflate(R.menu.photo_preview, menu);
+//        return true;
+//    }
 
 
     private void initCameraView() {
-        //TODO
         mWorker = new VideoProcessor(VideoProcessor.FIRST_CAMERA);
         mWorker.addResultCallback(this);
         new Thread(mWorker).start();
@@ -181,6 +180,8 @@ public class VideoPreviewActivity extends Activity implements SurfaceHolder.Call
                     if (canvas != null) {
                         mSurfaceHolder.unlockCanvasAndPost(canvas);
                     }
+                    // Tell the worker that the bitmap is ready to be reused
+                    mWorker.releaseResultBitmap(resultBitmap);
                 }
             }
             return true;

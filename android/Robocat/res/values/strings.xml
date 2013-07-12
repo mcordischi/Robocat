@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Robocat</string>
-    <string name="surface_text"></string>
+    <string name="surface_text">Funca</string>
     <string name="album_name">Robocat</string>
 </resources>

@@ -28,6 +28,8 @@ public class VideoProcessor implements Runnable{
     public static final int FIRST_CAMERA = 0;
     public static final int SECOND_CAMERA = 1;
 
+    //Bitmap buffer
+    public static final int RESULT_MATRIX_BUFFER_SIZE = 3;
 
     // Preview size
     private static int PREVIEW_WIDTH = 480;
@@ -71,6 +73,7 @@ public class VideoProcessor implements Runnable{
 
     public VideoProcessor(int cameraId) {
         mCameraId = cameraId;
+        mDoProcess = true;
         // Default preview size
         mPreviewSize = new Size(PREVIEW_WIDTH, PREVIEW_HEIGHT);
     }
@@ -123,6 +126,20 @@ public class VideoProcessor implements Runnable{
         mCurrentFrameHSV = new Mat();
         mFilteredFrame = new Mat();
         mThreshFrameResult = new Mat(PREVIEW_WIDTH, PREVIEW_HEIGHT,CvType.CV_8SC1);
+
+
+        // Since drawing to screen occurs on a different thread than the processing,
+        // we use a queue to handle the bitmaps we will draw to screen
+        mResultBitmaps.clear();
+        for (int i = 0; i < RESULT_MATRIX_BUFFER_SIZE; i++) {
+            Bitmap resultBitmap = Bitmap.createBitmap((int) mPreviewSize.width, (int) mPreviewSize.height,
+                    Bitmap.Config.ARGB_8888);
+            mResultBitmaps.offer(resultBitmap);
+        }
+    }
+
+    public void releaseResultBitmap(Bitmap bitmap) {
+        mResultBitmaps.offer(bitmap);
     }
 
     /**
@@ -131,7 +148,7 @@ public class VideoProcessor implements Runnable{
     @Override
     public void run() {
         mDoProcess = true;
-        Rect previewRect = new Rect(0, 0, (int) mPreviewSize.width, (int) mPreviewSize.height);
+//        Rect previewRect = new Rect(0, 0, (int) mPreviewSize.width, (int) mPreviewSize.height);
         double fps;
         mFpsFrequency = Core.getTickFrequency();
         mPrevFrameTime = Core.getTickCount();
@@ -143,22 +160,20 @@ public class VideoProcessor implements Runnable{
         while (mDoProcess && mCamera != null) {
             boolean grabbed = mCamera.grab();
             if (grabbed) {
-
                 // Retrieve the next frame from the camera in RGB format
                 mCamera.retrieve(mCurrentFrame, Highgui.CV_CAP_ANDROID_COLOR_FRAME_RGB);
 
-
                 // Convert the RGB frame to HSV as it is a more appropriate format when calling Core.inRange
                 Imgproc.cvtColor(mCurrentFrame, mCurrentFrameHSV, Imgproc.COLOR_RGB2HSV_FULL);
-
 
                 //Red is in the Hue=0, we must move the limit
                 int rotation = 128 - 255; // 255= red
                 Core.add(mCurrentFrameHSV,new Scalar(rotation,0,0), mCurrentFrameHSV);
 
-                //InRange ThresHolding
+                //InRange Thresholding
                 Core.inRange(mCurrentFrameHSV,LOWER_IN_RANGE,UPPER_IN_RANGE,mThreshFrameResult);
 
+//                notifyResultCallback(mCurrentFrameHSV);
                 notifyResultCallback(mThreshFrameResult);
 
                 fps = measureFps();
